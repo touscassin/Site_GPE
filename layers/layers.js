@@ -29,9 +29,9 @@ var lyr_Exploitation_1 = new ol.layer.Vector({
 
 lyr_OpenStreetMap_0.setVisible(true);lyr_Exploitation_1.setVisible(true);
 var layersList = [lyr_OpenStreetMap_0,lyr_Exploitation_1];
-lyr_Exploitation_1.set('fieldAliases', {'id': 'id', 'Lieux': 'Lieux', });
-lyr_Exploitation_1.set('fieldImages', {'id': '', 'Lieux': '', });
-lyr_Exploitation_1.set('fieldLabels', {'id': 'no label', 'Lieux': 'no label', });
+lyr_Exploitation_1.set('fieldAliases', {'id': 'id', 'Ville': 'Ville', 'Adresse': 'Adresse', });
+lyr_Exploitation_1.set('fieldImages', {'id': 'TextEdit', 'Ville': 'TextEdit', 'Adresse': 'TextEdit', });
+lyr_Exploitation_1.set('fieldLabels', {'id': 'no label', 'Ville': 'no label', 'Adresse': 'no label', });
 lyr_Exploitation_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
